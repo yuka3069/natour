@@ -1,0 +1,4 @@
+__MACOSX/
+.vscode/
+node_modules/
+css/

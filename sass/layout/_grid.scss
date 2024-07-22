@@ -1,0 +1,15 @@
+.row {
+  max-width: $max-row-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.col-1-of-2 {
+  width: 39%;
+}
+.col-1-of-4 {
+  width: 21.5%;
+}
+.col-1-of-3 {
+  width: 30%;
+}

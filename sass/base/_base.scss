@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  //1rem = 10px, 10/16 = 62.5%
+  @include responder(tab-land) {
+    font-size: 56.25%;
+    //1rem = 9px, 9/16 = 56.25%
+  }
+  @include responder(tab-port) {
+    font-size: 50%;
+    //1rem = 8px, 8/16 = 50%
+  }
+  @include responder(phone) {
+    font-size: 43.75%;
+    //1rem = 7px, 7/16 = 43.75%
+  }
+  @include responder(big-desktop) {
+    font-size: 75%;
+    //1rem = 12px, 12/16 = 75%
+  }
+}
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include responder(tab-land) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,48 @@
+.section-about {
+  background-color: $color-gray-light;
+  @include responder(tab-port) {
+    padding: 20rem $tab-port-padding;
+  }
+}
+.section-features {
+  height: 95vh;
+  padding: 20rem 0;
+
+  margin-top: -16rem;
+
+  background-color: $color-gray-light;
+  background-image: linear-gradient(
+      rgba($color-primary--light, 0.8),
+      rgba($color-primary--dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  transform: skewY(-$transform-deg--clip);
+  & > * {
+    transform: skewY($transform-deg--clip);
+  }
+}
+.section-price {
+  background-color: $color-gray-light;
+  padding: 20rem 0;
+  margin-top: -12rem;
+}
+.section-stories {
+  // background-color: $color-gray-light;
+  padding: 15rem 0;
+  position: relative;
+}
+.section-book {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary--light,
+    $color-primary--dark
+  );
+  padding: 15rem 0;
+  @include responder(tab-port) {
+    padding: 15rem $tab-port-padding;
+  }
+  // margin-top: -12rem;
+}
